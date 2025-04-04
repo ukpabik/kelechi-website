@@ -32,6 +32,7 @@ const projects = [
     techStack: ["React", "Node.js", "Express", "PostgreSQL", "Google Gen AI"],
     image: "/cryptochat-logo.png",
     github: "https://github.com/ukpabik/cryptochat",
+    link: "https://cryptochat-frontend.vercel.app"
   },
   {
     id: 3,
@@ -41,15 +42,6 @@ const projects = [
     techStack: ["Java", "PostgreSQL", "Docker", "TCP/IP"],
     image: "/termbattle.png",
     github: "https://github.com/ukpabik/termbattle",
-  },
-  {
-    id: 4,
-    title: "PowerPong",
-    description:
-      "A Java-based Ping-Pong game with dynamic UI, power-up mechanics, and MVC architecture, built using Graphics2D and Swing.",
-    techStack: ["Java"],
-    image: "/powerpong.png",
-    github: "https://github.com/ukpabik/PowerPong",
   }
 ];
 export default function Projects() {
