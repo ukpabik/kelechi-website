@@ -21,6 +21,7 @@
 ```bash
 git clone https://github.com/ukpabik/kelechi-website.git
 cd kelechi-website
+cd website
 ```
 
 ### 🧪 Install Dependencies
