@@ -5,19 +5,22 @@ const Sketch = (p: p5) => {
   let totalPoints = 550;      
   let angleIncrement = 3;    
   let radiusIncrement = 0.3;
+  let canvasSize = totalPoints * radiusIncrement + 200;
 
   p.setup = () => {
-    p.createCanvas(600, 600, "webgl"); 
+    p.createCanvas(canvasSize, canvasSize, "webgl"); 
     p.angleMode(p.DEGREES);
     p.noFill();
     p.stroke(255);
   };
 
   p.draw = () => {
-    p.background(0, 20);
-    p.rotateZ(p.frameCount * 0.1);
+    p.clear();
+    p.push();
+    p.rotateZ(p.frameCount * 0.4);
     p.scale(0.9);
     drawSpiral();
+    p.pop();
   };
 
   function drawSpiral() {
@@ -44,7 +47,7 @@ const Spiral = () => {
   return (
     <div
       id="spiral-animation"
-      className="bg-black w-full h-[600px] flex justify-center items-center"
+      className="flex justify-center items-center"
     >
       <ReactP5Wrapper sketch={Sketch} />
     </div>

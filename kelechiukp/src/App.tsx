@@ -1,13 +1,16 @@
-import './App.css'
-import './index.css'
+import './styles/App.css'
+import './styles/index.css'
 import Navbar from './components/Navbar.tsx'
-import About from './components/About.tsx'
+import Home from './components/Home.tsx'
+import Projects from './components/Projects.tsx'
 
 function App() {
   return (
     <>
       <Navbar />
-      <About />
+      <Home />
+      <Projects />
+      
 
     </>
   )
