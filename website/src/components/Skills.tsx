@@ -43,18 +43,18 @@ export default function Skills() {
         {skills.map((skill, index) => (
           <div
             key={index}
-            className="flex items-center p-2 rounded-md border border-border transition-all duration-300 hover:shadow-sm"
+            className="group flex items-center p-2 rounded-md border border-border transition duration-300 hover:border-black"
           >
             {skill.logo && (
               <div className="mr-2 flex-shrink-0">
                 <img
                   src={skill.logo}
                   alt={`${skill.name} logo`}
-                  className="object-contain w-6 h-6"
+                  className="object-contain w-6 h-6 transition duration-300 group-hover:invert"
                 />
               </div>
             )}
-            <span className="text-sm font-medium">{skill.name}</span>
+            <span className="text-sm font-medium transition-colors duration-300">{skill.name}</span>
           </div>
         ))}
       </div>
