@@ -2,7 +2,7 @@ import { Badge } from "@/components/ui/badge"
 import { Card, CardContent } from "@/components/ui/card"
 import githubIcon from "../assets/github.svg"
 
-interface ProjectType {
+type ProjectType = {
   id: number,
   title: string,
   description: string,
@@ -46,7 +46,7 @@ const projects = [
 ];
 export default function Projects() {
   return (
-    <div id="projects" className="container mx-auto py-12">
+    <div id="projects" className="container mx-auto px-4 md:px-6 max-w-[1000px] py-12">
       <h2 className="text-3xl font-bold mb-8">pet projects</h2>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {projects.map((project) => (
@@ -62,7 +62,7 @@ function ProjectCard({ project }: {project: ProjectType}) {
     <Card className="overflow-hidden h-[400px] group relative">
       <div className="absolute inset-0 w-full h-full z-5">
         <img src={project.image || "/placeholder.svg"} alt={project.title} className="object-cover h-full w-full" />
-        <div className="absolute inset-0 bg-black/60 group-hover:bg-black/70 transition-colors duration-300"></div>
+        <div className="absolute inset-0 bg-black/70 group-hover:bg-black/80 transition-colors duration-300"></div>
       </div>
 
       <div className="absolute top-4 right-4 z-10 flex gap-2">
@@ -73,7 +73,7 @@ function ProjectCard({ project }: {project: ProjectType}) {
             rel="noopener noreferrer"
             onClick={(e) => e.stopPropagation()}
           >
-            <img src={githubIcon} alt="GitHub" className="invert w-5 h-5 text-white" />
+            <img src={githubIcon} alt="GitHub" className="invert w-5 h-5" />
           </a>
         )}
 
@@ -84,17 +84,17 @@ function ProjectCard({ project }: {project: ProjectType}) {
             rel="noopener noreferrer"
             onClick={(e) => e.stopPropagation()}
           >
-            <img src="/link.svg" alt="Link" className="invert w-5 h-5 text-white" />
+            <img src="/link.svg" alt="Link" className="invert w-5 h-5 text-[#D1DEDE]" />
           </a>
         )}
       </div>
 
-      <CardContent className="relative z-5 flex flex-col justify-end h-full p-6 text-white">
-        <h3 className="text-2xl font-bold mb-2">{project.title}</h3>
-        <p className="text-sm text-gray-200 mb-4">{project.description}</p>
-        <div className="flex flex-wrap gap-2">
+      <CardContent className="relative z-5 flex flex-col justify-end h-full p-6 text-[#D1DEDE]">
+        <h3 className="text-2xl font-bold mb-2 text-center">{project.title}</h3>
+        <p className="text-sm mb-4 text-center">{project.description}</p>
+        <div className="flex flex-wrap gap-2 items-center justify-center">
           {project.techStack.map((tech, index) => (
-            <Badge key={index} variant="secondary" className="bg-white/20 hover:bg-white/30 text-white">
+            <Badge key={index} variant="secondary" className="bg-white/30 hover:bg-white/40 text-[#D1DEDE]">
               {tech}
             </Badge>
           ))}

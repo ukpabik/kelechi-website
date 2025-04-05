@@ -4,7 +4,7 @@ import linkedInLogo from "../assets/linkedin.svg";
 
 export default function Navbar() {
   return (
-    <nav className="text-white sticky top-0 z-[100] w-full bg-[#1D201F]">
+    <nav className="sticky top-0 z-[100] w-full bg-[#1D201F]">
       <div className="container mx-auto  flex h-16 items-center justify-between">
         <div className="flex items-center space-x-8">
           <a href="/" className="text-lg font-bold sm:text-xl whitespace-nowrap">

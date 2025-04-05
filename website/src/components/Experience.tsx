@@ -60,7 +60,7 @@ export default function Experiences() {
   return (
     <motion.div
       id="experience"
-      className="container max-w-[1000px] mx-auto py-12 px-4"
+      className="container max-w-[1000px] mx-auto py-12 px-4 md:px-6"
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}

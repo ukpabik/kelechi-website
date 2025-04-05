@@ -4,7 +4,7 @@ import "../styles/Home.css"
 export default function Home(){
 
   return (
-    <div id="home" className="min-h-screen flex flex-col items-center justify-center space-y-6 bg-[#1D201F] text-white">
+    <div id="home" className="min-h-screen flex flex-col items-center justify-center space-y-6 bg-[#1D201F]">
       <Spiral />
 
       <h1 className="text-3xl sm:text-4xl font-bold flex items-center">
