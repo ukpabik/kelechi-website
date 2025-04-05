@@ -12,7 +12,7 @@ export default function Skills() {
     { name: "Golang", logo: "https://cdn.simpleicons.org/go" },
     { name: "Swift", logo: "https://cdn.simpleicons.org/swift" },
     { name: "C", logo: "https://cdn.simpleicons.org/c" },
-    { name: "SQL", logo: "https://cdn.simpleicons.org/postgresql" },
+    { name: "SQL", logo: "https://cdn.simpleicons.org/mysql" },
     { name: "HTML5", logo: "https://cdn.simpleicons.org/html5" },
     { name: "CSS", logo: "https://cdn.simpleicons.org/css3" },
   ];
