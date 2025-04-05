@@ -1,6 +1,7 @@
+import me from "../assets/me.jpg"
 export default function About() {
   return (
-    <section id="about">
+    <section id="about" className="scroll-mt-24">
       <div className="container mx-auto px-4 md:px-6 max-w-[1000px]">
         <h2 className="text-3xl font-bold mb-10">about me</h2>
 
@@ -34,7 +35,7 @@ export default function About() {
           <div className="md:col-span-2 flex justify-center md:justify-end">
             <div className="relative w-64 h-64 md:w-80 md:h-80 overflow-hidden rounded-2xl shadow-xl">
               <img
-                src="/placeholder.svg"
+                src={me}
                 alt="Profile picture"
                 className="object-cover w-full h-full"
               />

@@ -54,7 +54,10 @@ export default {
   				'5': 'hsl(var(--chart-5))'
   			}
   		}
-  	}
+  	},
+		variants: {
+			fill: ['hover']
+		}
   },
   plugins: [require("tailwindcss-animate")],
 }
