@@ -24,7 +24,7 @@ export default {
   				foreground: 'hsl(var(--popover-foreground))'
   			},
   			primary: {
-  				DEFAULT: 'hsl(var(--primary))',
+  				primary: '#EAD2AC',
   				foreground: 'hsl(var(--primary-foreground))'
   			},
   			secondary: {
