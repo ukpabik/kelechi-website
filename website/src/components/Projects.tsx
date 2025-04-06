@@ -41,7 +41,7 @@ const projects = [
       "A turn-based multiplayer terminal game in Java supporting up to 1,000 concurrent users with Dockerized deployment and multithreaded TCP architecture.",
     techStack: ["Java", "PostgreSQL", "Docker", "TCP/IP"],
     image: "/termbattle.png",
-    github: "https://github.com/ukpabik/termbattle",
+    github: "https://github.com/ukpabik/term-battle",
   }
 ];
 export default function Projects() {
