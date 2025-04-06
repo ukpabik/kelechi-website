@@ -5,20 +5,24 @@ const Sketch = (p: p5) => {
   let totalPoints = 550;      
   let angleIncrement = 3;    
   let radiusIncrement = 0.3;
-  let canvasSize = totalPoints * radiusIncrement + 200;
+  let canvasSize = totalPoints * radiusIncrement + 200; 
 
   p.setup = () => {
-    p.createCanvas(canvasSize, canvasSize, "webgl"); 
+    const cnv = p.createCanvas(canvasSize, canvasSize);
+    cnv.addClass("canvas-class");
     p.angleMode(p.DEGREES);
-    p.noFill();
     p.stroke(255);
+    p.noFill();
   };
 
   p.draw = () => {
-    p.clear();
+    p.background("#1D201F");
+
     p.push();
-    p.rotateZ(p.frameCount * 0.4);
+    p.translate(p.width / 2, p.height / 2);
+    p.rotate(p.frameCount * 0.4);
     p.scale(0.9);
+
     drawSpiral();
     p.pop();
   };
@@ -29,10 +33,10 @@ const Sketch = (p: p5) => {
 
     p.beginShape();
     for (let i = 0; i < totalPoints; i++) {
+      const offset = 0.05 * radius * p.sin(p.frameCount * 0.05 + i * 0.1);
+
       const x = radius * p.cos(angle);
       const y = radius * p.sin(angle);
-
-      const offset = 10 * p.sin(p.frameCount * 0.05 + i * 0.1);
 
       p.vertex(x + offset, y + offset);
 
