@@ -3,7 +3,7 @@
 import githubIcon from "../assets/github.svg"
 import linkedInLogo from "../assets/linkedin.svg"
 import { useState } from "react"
-import { Menu, X, Mail } from "lucide-react"
+import { Menu, X } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 export default function Navbar() {
