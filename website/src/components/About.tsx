@@ -15,7 +15,7 @@ export default function About() {
               >
                 GitHub
               </a>
-              , where I work on the <em>[Team Name]</em> team.
+              .
 
               I'm also a third-year student completing a <strong>Bachelor of Science</strong> in <strong>Computer Science</strong> with a minor in <strong>Statistics</strong> at{" "}
               <a

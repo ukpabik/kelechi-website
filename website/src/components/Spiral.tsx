@@ -34,7 +34,7 @@ const Sketch = (p: p5) => {
     p.beginShape();
     for (let i = 0; i < totalPoints; i++) {
       const offset = 0.05 * radius * p.sin(p.frameCount * 0.05 + i * 0.1);
-
+ 
       const x = radius * p.cos(angle);
       const y = radius * p.sin(angle);
 

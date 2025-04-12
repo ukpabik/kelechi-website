@@ -13,7 +13,8 @@ type Experience = {
   location: string
   startDate: string
   endDate: string
-  description: string[]
+  majorDesc: string
+  minorDescs: string[]
   skills: string[]
   link?: string
   logo?: string
@@ -23,13 +24,14 @@ type Experience = {
 const experiencesData: Experience[] = [
   {
     id: "exp1",
-    title: "Incoming Software Engineer Intern",
+    title: "Software Engineer Intern",
     company: "GitHub",
     location: "San Francisco, CA (Remote)",
     startDate: "May 2025",
     endDate: "Aug 2025",
-    description: ["..."],
-    skills: ["..."],
+    majorDesc: "Incoming Software Engineer Intern Summer 2025.",
+    minorDescs: [],
+    skills: ["Go", "Python", "Java", "Ruby on Rails"],
     link: "https://github.com/about",
     logo: "/github-logo.png",
   },
@@ -40,17 +42,18 @@ const experiencesData: Experience[] = [
     location: "Chapel Hill, NC",
     startDate: "Sep 2024",
     endDate: "Present",
-    description: [
-      "Led the development and release of 5+ features for Centible, a published iOS app helping 500+ users manage their daily spending habits.",
-      "Spearheaded the refactoring of a deprecated JavaScript Firebase backend, reducing notification errors by nearly 100% and ensuring stable, real-time updates for all users.",
-      "Directed an Agile team of 3 backend engineers in a cross-functional group of 20, including UI/UX and iOS developers."
+    majorDesc: "Centible is a student-led iOS startup that helps users track daily spending and build mindful financial habits.",
+    minorDescs: [
+      "Led development of 5+ new features, contributing to 500+ active users.",
+      "Refactored legacy Firebase backend, minimizing errors by over 90%.",
+      "Managed a team of 3 backend developers within a 20-person Agile org.",
     ],
     skills: ["Swift", "JavaScript", "Node.js", "Google Firebase"],
     link: "https://appteamcarolina.com/",
     logo: "/appteam.svg",
-  }
-  
+  },
 ]
+
 
 export default function Experiences() {
   const [selectedExperience, setSelectedExperience] = useState<string>(experiencesData[0].id)
@@ -117,7 +120,7 @@ export default function Experiences() {
               exit={{ opacity: 0, y: -20 }}
               transition={{ duration: 0.3 }}
             >
-              <Card className="text-white bg-transparent shadow-none border-none">
+              <Card className="text-white bg-transparent shadow-none border-none h-[400px] overflow-y-auto">
                 <CardHeader>
                   <div className="flex justify-between items-start">
                     <div>
@@ -141,13 +144,17 @@ export default function Experiences() {
                 </CardHeader>
                 <CardContent>
                   <div className="space-y-6">
-                    <ul className="list-disc pl-5 space-y-2 text-sm">
-                      {currentExperience.description.map((point, index) => (
-                        <li key={index}>
-                          {point}
-                        </li>
-                      ))}
-                    </ul>
+                    <div className="space-y-4 text-sm">
+                      <p className="font-medium text-base">{currentExperience.majorDesc}</p>
+                      <ul className="space-y-2">
+                        {currentExperience.minorDescs.map((point, index) => (
+                          <li key={index} className="flex items-start gap-2 opacity-80">
+                            <span className="text-[#EAD2AC] mt-[2px]">★</span>
+                            <span>{point}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
                     <div>
                       <h4 className="text-sm font-medium mb-2">Skills & Technologies</h4>
                       <div className="flex flex-wrap gap-2">

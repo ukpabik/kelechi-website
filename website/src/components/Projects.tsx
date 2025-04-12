@@ -17,25 +17,34 @@ type ProjectType = {
 const projects = [
   {
     id: 1,
-    title: "Bolt",
+    title: "SyllaByte",
     description:
-      "A React-based web app that transcribes videos and generates clickable, timestamped notes using OpenAI Whisper and GPT-4.",
-    techStack: ["React", "Node.js", "Express", "PostgreSQL", "OAuth2", "OpenAI API"],
-    image: "/bolt-logo.png",
-    link: "https://devpost.com/software/bolt-yaveuc",
+      "Chrome extension and dashboard that extracts academic deadlines from PDF syllabi using a 92% accurate Python machine learning NER model, enabling one-click import to Google Calendar.",
+    techStack: ["Python", "spaCy", "Flask", "TypeScript", "React", "PostgreSQL"],
+    image: "/syllabyte.png",
+    github: "https://github.com/ukpabik/Syllabyte",
   },
   {
     id: 2,
+    title: "Bolt",
+    description:
+      "A React-based web app that transcribes videos and generates clickable, timestamped notes using OpenAI Whisper and GPT-4.",
+    techStack: ["React", "PostgreSQL", "OAuth2", "OpenAI API"],
+    image: "/bolt.png",
+    link: "https://devpost.com/software/bolt-yaveuc",
+  },
+  {
+    id: 3,
     title: "CryptoChat",
     description:
       "A real-time cryptocurrency chat app with sub-50ms messaging, live crypto data, and JWT-secured authentication.",
     techStack: ["React", "Node.js", "Express", "PostgreSQL", "Google Gen AI"],
-    image: "/cryptochat-logo.png",
+    image: "/cryptochat.png",
     github: "https://github.com/ukpabik/cryptochat",
     link: "https://cryptochat-frontend.vercel.app"
   },
   {
-    id: 3,
+    id: 4,
     title: "TermBattle",
     description:
       "A turn-based multiplayer terminal game in Java supporting up to 1,000 concurrent users with Dockerized deployment and multithreaded TCP architecture.",
@@ -62,7 +71,7 @@ function ProjectCard({ project }: {project: ProjectType}) {
     <Card className="overflow-hidden h-[400px] group relative">
       <div className="absolute inset-0 w-full h-full z-5">
         <img src={project.image || "/placeholder.svg"} alt={project.title} className="object-cover h-full w-full" />
-        <div className="absolute inset-0 bg-black/70 group-hover:bg-black/80 transition-colors duration-300"></div>
+        <div className="absolute inset-0 bg-black/70 group-hover:bg-black/50 transition-colors duration-300"></div>
       </div>
 
       <div className="absolute top-4 right-4 z-10 flex gap-2">
