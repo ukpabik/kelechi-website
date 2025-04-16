@@ -19,7 +19,7 @@ const projects = [
     id: 1,
     title: "MidDiff.gg",
     description:
-      "A full-stack League of Legends analytics tool that uses machine learning to analyze player behavior, cluster gameplay styles, and deliver personalized feedback.",
+      "A League of Legends platform that uses machine learning to analyze player behavior, cluster gameplay styles, and deliver personalized feedback.",
     techStack: ["Spring Boot", "Flask", "Next.js", "AWS EC2", "scikit-learn", "PostgreSQL"],
     image: "/middiff.gg.png",
     github: "https://github.com/ukpabik/mid-diff",
