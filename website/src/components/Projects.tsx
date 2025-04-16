@@ -17,6 +17,16 @@ type ProjectType = {
 const projects = [
   {
     id: 1,
+    title: "MidDiff.gg",
+    description:
+      "A full-stack League of Legends analytics tool that uses machine learning to analyze player behavior, cluster gameplay styles, and deliver personalized feedback.",
+    techStack: ["Spring Boot", "Flask", "Next.js", "AWS EC2", "scikit-learn", "PostgreSQL"],
+    image: "/middiff.gg.png",
+    github: "https://github.com/ukpabik/mid-diff",
+    link: "https://mid-diff.vercel.app/"
+  },
+  {
+    id: 2,
     title: "SyllaByte",
     description:
       "Chrome extension and dashboard that extracts academic deadlines from PDF syllabi using a 92% accurate Python machine learning NER model, enabling one-click import to Google Calendar.",
@@ -25,7 +35,7 @@ const projects = [
     github: "https://github.com/ukpabik/Syllabyte",
   },
   {
-    id: 2,
+    id: 3,
     title: "Bolt",
     description:
       "A React-based web app that transcribes videos and generates clickable, timestamped notes using OpenAI Whisper and GPT-4.",
@@ -34,7 +44,7 @@ const projects = [
     link: "https://devpost.com/software/bolt-yaveuc",
   },
   {
-    id: 3,
+    id: 4,
     title: "CryptoChat",
     description:
       "A real-time cryptocurrency chat app with sub-50ms messaging, live crypto data, and JWT-secured authentication.",
@@ -44,7 +54,7 @@ const projects = [
     link: "https://cryptochat-frontend.vercel.app"
   },
   {
-    id: 4,
+    id: 5,
     title: "TermBattle",
     description:
       "A turn-based multiplayer terminal game in Java supporting up to 1,000 concurrent users with Dockerized deployment and multithreaded TCP architecture.",
