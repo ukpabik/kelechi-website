@@ -31,7 +31,7 @@ const experiencesData: Experience[] = [
     endDate: "Aug 2025",
     majorDesc: "Migrations Team - GitHub Enterprise",
     minorDescs: [],
-    skills: ["Go"],
+    skills: ["Go", "Docker", "GraphQL", "REST APIs"],
     link: "https://github.com/about",
     logo: "/github-logo.png",
   },
