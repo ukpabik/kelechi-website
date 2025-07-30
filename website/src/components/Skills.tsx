@@ -14,7 +14,7 @@ export default function Skills() {
     { name: "C", logo: "https://cdn.simpleicons.org/c" },
     { name: "SQL", logo: "https://cdn.simpleicons.org/mysql" },
     { name: "HTML5", logo: "https://cdn.simpleicons.org/html5" },
-    { name: "CSS", logo: "https://cdn.simpleicons.org/css3" },
+    { name: "CSS", logo: "https://cdn.simpleicons.org/css" },
   ];
   
   const frameworkSkills: Skill[] = [
