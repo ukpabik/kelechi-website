@@ -17,6 +17,15 @@ type ProjectType = {
 const projects = [
   {
     id: 1,
+    title: "eZpZ-lister",
+    description:
+      "eZpZ-lister is a full-stack application designed to automate the most tedious parts of the eBay listing process and completely eliminate fees.",
+    techStack: ["Go", "Next.js", "TypeScript", "Tailwind CSS", "PostgreSQL"],
+    image: "/ezpz-image.png",
+    github: "https://github.com/ukpabik/eZpZ-lister",
+  },
+  {
+    id: 2,
     title: "MidDiff.gg",
     description:
       "A League of Legends platform that uses machine learning to analyze player behavior, cluster gameplay styles, and deliver personalized feedback.",
@@ -26,7 +35,7 @@ const projects = [
     link: "https://mid-diff.vercel.app/"
   },
   {
-    id: 2,
+    id: 3,
     title: "SyllaByte",
     description:
       "Chrome extension and dashboard that extracts academic deadlines from PDF syllabi using a 92% accurate Python machine learning NER model, enabling one-click import to Google Calendar.",
@@ -35,7 +44,7 @@ const projects = [
     github: "https://github.com/ukpabik/Syllabyte",
   },
   {
-    id: 3,
+    id: 4,
     title: "Bolt",
     description:
       "A React-based web app that transcribes videos and generates clickable, timestamped notes using OpenAI Whisper and GPT-4.",
@@ -44,7 +53,7 @@ const projects = [
     link: "https://devpost.com/software/bolt-yaveuc",
   },
   {
-    id: 4,
+    id: 5,
     title: "CryptoChat",
     description:
       "A real-time cryptocurrency chat app with sub-50ms messaging, live crypto data, and JWT-secured authentication.",
@@ -54,7 +63,7 @@ const projects = [
     link: "https://cryptochat-frontend.vercel.app"
   },
   {
-    id: 5,
+    id: 6,
     title: "TermBattle",
     description:
       "A turn-based multiplayer terminal game in Java supporting up to 1,000 concurrent users with Dockerized deployment and multithreaded TCP architecture.",
