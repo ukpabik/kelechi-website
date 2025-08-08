@@ -30,8 +30,13 @@ const experiencesData: Experience[] = [
     startDate: "May 2025",
     endDate: "Aug 2025",
     majorDesc: "Migrations Team - GitHub Enterprise",
-    minorDescs: [],
-    skills: ["Go", "Docker", "GraphQL", "REST APIs"],
+    minorDescs: [
+      "Built Go CLI tool for large-scale repo migrations, reducing failures by 95%.", 
+      "Added migration time prediction via linear regression, boosting accuracy by 80%.", 
+      "Integrated GraphQL & REST APIs for major VCS, reaching 4M+ enterprise users.",
+      "Refactored backend with modular CLI, 100% unit test coverage, and CI/CD, raising error detection by 99%."
+    ],
+    skills: ["Go", "Docker", "GraphQL", "REST APIs", "GitHub Actions"],
     link: "https://github.com/about",
     logo: "/github-logo.png",
   },
