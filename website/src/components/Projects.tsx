@@ -22,7 +22,7 @@ const projects = [
       "eZpZ-lister is a full-stack application designed to automate the most tedious parts of the eBay listing process and completely eliminate fees.",
     techStack: ["Go", "Next.js", "TypeScript", "Tailwind CSS", "PostgreSQL"],
     image: "/ezpz-image.png",
-    github: "https://github.com/ukpabik/eZpZ-lister",
+    link: "https://ezpz-lister-frontend.vercel.app",
   },
   {
     id: 2,
