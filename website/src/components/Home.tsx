@@ -15,7 +15,7 @@ export default function Home(){
       <h2 className="text-xl sm:text-2xl md:text-3xl text-center px-4 opacity-80">I like to build cool things.</h2>
 
       <p className="max-w-xl text-center text-lg px-4 opacity-60">
-        I'm a third-year student studying Computer Science and Statistics at UNC Chapel Hill. I'm passionate about
+        I'm a fourth-year student studying Computer Science and Statistics at UNC Chapel Hill. I'm passionate about
         performant, high-impact projects, and learning how to build scalable systems that solve real-world problems with
         efficiency.
       </p>

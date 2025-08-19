@@ -17,7 +17,7 @@ export default function About() {
               </a>
               .
 
-              I'm also a third-year student completing a <strong>Bachelor of Science</strong> in <strong>Computer Science</strong> with a minor in <strong>Statistics</strong> at{" "}
+              I'm also a fourth-year student completing a <strong>Bachelor of Science</strong> in <strong>Computer Science</strong> with a minor in <strong>Statistics</strong> at{" "}
               <a
                 href="https://www.unc.edu"
                 className="text-primary font-medium text-[#EAD2AC]"
