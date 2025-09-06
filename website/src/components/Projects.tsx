@@ -17,9 +17,9 @@ type ProjectType = {
 const projects = [
   {
     id: 1,
-    title: "eZpZ-lister",
+    title: "ezpzlister",
     description:
-      "eZpZ-lister is a full-stack application designed to automate the most tedious parts of the eBay listing process and completely eliminate fees.",
+      "ezpzlister is a full-stack application designed to automate the most tedious parts of the eBay listing process and completely eliminate fees.",
     techStack: ["Go", "Next.js", "TypeScript", "Tailwind CSS", "PostgreSQL"],
     image: "/ezpz-image.png",
     link: "https://ezpzlister.com",
