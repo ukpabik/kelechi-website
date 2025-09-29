@@ -36,6 +36,15 @@ const projects = [
   },
   {
     id: 3,
+    title: "CSYou",
+    description:
+      "CSYou is a self-hosted analytics platform for Counter-Strike 2 that captures live game telemetry via CS2's Game State Integration (GSI) to provide real-time insights into your gameplay.",
+    techStack: ["Go", "Kafka", "Redis", "ClickHouse", "Docker", "Tauri"],
+    image: "/csyou_picture.png",
+    github: "https://github.com/ukpabik/CSYou",
+  },
+  {
+    id: 4,
     title: "SyllaByte",
     description:
       "Chrome extension and dashboard that extracts academic deadlines from PDF syllabi using a 92% accurate Python machine learning NER model, enabling one-click import to Google Calendar.",
@@ -44,23 +53,13 @@ const projects = [
     github: "https://github.com/ukpabik/Syllabyte",
   },
   {
-    id: 4,
+    id: 5,
     title: "Bolt",
     description:
       "A React-based web app that transcribes videos and generates clickable, timestamped notes using OpenAI Whisper and GPT-4.",
     techStack: ["React", "PostgreSQL", "OAuth2", "OpenAI API"],
     image: "/bolt.png",
     link: "https://devpost.com/software/bolt-yaveuc",
-  },
-  {
-    id: 5,
-    title: "CryptoChat",
-    description:
-      "A real-time cryptocurrency chat app with sub-50ms messaging, live crypto data, and JWT-secured authentication.",
-    techStack: ["React", "Node.js", "Express", "PostgreSQL", "Google Gen AI"],
-    image: "/cryptochat.png",
-    github: "https://github.com/ukpabik/cryptochat",
-    link: "https://cryptochat-frontend.vercel.app"
   },
   {
     id: 6,
