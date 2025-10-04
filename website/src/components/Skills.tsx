@@ -5,11 +5,11 @@ type Skill = {
 
 export default function Skills() {
   const languageSkills: Skill[] = [
+    { name: "Golang", logo: "https://cdn.simpleicons.org/go" },
+    { name: "Python", logo: "https://cdn.simpleicons.org/python" },
     { name: "Java", logo: "/java.svg" },
     { name: "JavaScript", logo: "https://cdn.simpleicons.org/javascript" },
-    { name: "Python", logo: "https://cdn.simpleicons.org/python" },
     { name: "TypeScript", logo: "https://cdn.simpleicons.org/typescript" },
-    { name: "Golang", logo: "https://cdn.simpleicons.org/go" },
     { name: "Swift", logo: "https://cdn.simpleicons.org/swift" },
     { name: "C", logo: "https://cdn.simpleicons.org/c" },
     { name: "SQL", logo: "https://cdn.simpleicons.org/mysql" },
@@ -18,8 +18,8 @@ export default function Skills() {
   ];
   
   const frameworkSkills: Skill[] = [
-    { name: "React", logo: "https://cdn.simpleicons.org/react" },
     { name: "Next.js", logo: "https://cdn.simpleicons.org/nextdotjs" },
+    { name: "React", logo: "https://cdn.simpleicons.org/react" },
     { name: "Node.js", logo: "https://cdn.simpleicons.org/nodedotjs" },
     { name: "Express", logo: "https://cdn.simpleicons.org/express" },
     { name: "Flask", logo: "https://cdn.simpleicons.org/flask" },
@@ -31,6 +31,9 @@ export default function Skills() {
     { name: "GitHub", logo: "https://cdn.simpleicons.org/github" },
     { name: "Docker", logo: "https://cdn.simpleicons.org/docker" },
     { name: "PostgreSQL", logo: "https://cdn.simpleicons.org/postgresql" },
+    { name: "Kafka", logo: "https://cdn.simpleicons.org/apachekafka" },
+    { name: "Redis", logo: "https://cdn.simpleicons.org/redis" },
+    { name: "ClickHouse", logo: "https://cdn.simpleicons.org/clickhouse" },
     { name: "Firebase", logo: "https://cdn.simpleicons.org/firebase" },
     { name: "JUnit", logo: "https://cdn.simpleicons.org/junit5" },
     { name: "Maven", logo: "https://cdn.simpleicons.org/apachemaven" },
