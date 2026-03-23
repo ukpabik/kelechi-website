@@ -33,7 +33,7 @@ const experiencesData: Experience[] = [
     minorDescs: [
       "Spring 2026"
     ],
-    skills: ["..."],
+    skills: ["Python", "Retrieval Augmented Generation (RAG)", "Agentic Workflows"],
     link: "https://cisco.com",
     logo: "/cisco_logo.png",
   },
