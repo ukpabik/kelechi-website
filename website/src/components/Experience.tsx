@@ -31,7 +31,7 @@ const experiencesData: Experience[] = [
     endDate: "Apr 2026",
     majorDesc: "CETO Team - Agentic AI Systems",
     minorDescs: [
-      "Spring 2026"
+      "Developed an agentic RAG system with Python tooling, cutting licensing support resolution time by 85%"
     ],
     skills: ["Python", "Retrieval Augmented Generation (RAG)", "Agentic Workflows"],
     link: "https://cisco.com",
