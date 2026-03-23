@@ -25,6 +25,21 @@ const experiencesData: Experience[] = [
   {
     id: "exp1",
     title: "Software Engineer Intern",
+    company: "Cisco",
+    location: "Raleigh, NC",
+    startDate: "Jan 2026",
+    endDate: "Apr 2026",
+    majorDesc: "CETO Team - Agentic AI Systems",
+    minorDescs: [
+      "Spring 2026"
+    ],
+    skills: ["..."],
+    link: "https://cisco.com",
+    logo: "/cisco_logo.png",
+  },
+  {
+    id: "exp2",
+    title: "Software Engineer Intern",
     company: "GitHub",
     location: "San Francisco, CA (Remote)",
     startDate: "May 2025",
@@ -41,7 +56,7 @@ const experiencesData: Experience[] = [
     logo: "/github-logo.png",
   },
   {
-    id: "exp2",
+    id: "exp3",
     title: "Software Engineer",
     company: "App Team Carolina",
     location: "Chapel Hill, NC",
