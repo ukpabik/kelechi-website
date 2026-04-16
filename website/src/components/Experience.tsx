@@ -28,10 +28,11 @@ const experiencesData: Experience[] = [
     company: "Cisco",
     location: "Raleigh, NC",
     startDate: "Jan 2026",
-    endDate: "Apr 2026",
+    endDate: "May 2026",
     majorDesc: "CETO Team - Agentic AI Systems",
     minorDescs: [
-      "Developed an agentic RAG system with Python tooling, cutting licensing support resolution time by 85%"
+      "Developed RAG system across 5+ sources; reduced support resolution time by 85%.",
+      "Automated 1M+ support case workflows through OpenAI and Cisco LLM integrations."
     ],
     skills: ["Python", "Retrieval Augmented Generation (RAG)", "Agentic Workflows"],
     link: "https://cisco.com",
