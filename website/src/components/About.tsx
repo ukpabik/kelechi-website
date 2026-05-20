@@ -8,28 +8,35 @@ export default function About() {
         <div className="grid grid-cols-1 md:grid-cols-5 gap-8 text-[#D1DEDE]">
           <div className="md:col-span-3 space-y-6">
             <p className="text-lg">
-              I'm currently a <strong>Software Engineer Intern</strong> at{" "}
+              I'm currently a <strong>Software Engineer</strong> at{" "}
               <a
-                href="https://github.com/about"
+                href="https://google.com"
                 className="text-primary font-medium text-[#EAD2AC]"
               >
-                GitHub
+                Google
               </a>
-              .
-
-              I'm also a fourth-year student completing a <strong>Bachelor of Science</strong> in <strong>Computer Science</strong> with a minor in <strong>Statistics</strong> at{" "}
-              <a
-                href="https://www.unc.edu"
-                className="text-primary font-medium text-[#EAD2AC]"
-              >
-                University of North Carolina at Chapel Hill
-              </a>
-              .
+              , where I help build infrastructure to ensure Google stays tax compliant.
+              Previously, I was at 
+              <a href="https://github.com" className="text-primary font-medium text-[#EAD2AC]"> GitHub </a> 
+              and 
+              <a href="https://www.cisco.com" className="text-primary font-medium text-[#EAD2AC]"> Cisco </a>
+              working on migrations and agentic workflows.
             </p>
+            <div className="pt-4">
+              <p className="text-sm font-semibold uppercase tracking-wider text-[#EAD2AC] mb-4">
+                Technologies I'm currently using:
+              </p>
+              <ul className="grid grid-cols-2 gap-2 text-sm font-mono">
+                <li>▹ Java</li>
+                <li>▹ Protobuf</li>
+              </ul>
+            </div>
             <p className="text-lg leading-relaxed">
-            Outside of school, I'm passionate about creative side projects and always eager to learn new skills. 
-            In my free time, I enjoy collecting niche fragrances, playing video games, or lifting at the gym.
+            Outside of work, I love collecting fragrances, playing video games, watching movies, or exercising. 
+              My favorite show is <a href="https://www.netflix.com/title/80992228" className="text-red-500 hover:underline" target="_blank" rel="noopener noreferrer">Kengan Ashura</a>, and my favorite game of all time is <a href="https://www.pokemon.com/us/pokemon-video-games/pokemon-black-version-and-pokemon-white-version/" className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">Pokemon Black</a>.
+            
             </p>
+            
           </div>
 
           <div className="md:col-span-2 flex justify-center md:justify-end">

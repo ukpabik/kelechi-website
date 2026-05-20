@@ -10,11 +10,7 @@ export default function Skills() {
     { name: "Java", logo: "/java.svg" },
     { name: "JavaScript", logo: "https://cdn.simpleicons.org/javascript" },
     { name: "TypeScript", logo: "https://cdn.simpleicons.org/typescript" },
-    { name: "Swift", logo: "https://cdn.simpleicons.org/swift" },
-    { name: "C", logo: "https://cdn.simpleicons.org/c" },
     { name: "SQL", logo: "https://cdn.simpleicons.org/mysql" },
-    { name: "HTML5", logo: "https://cdn.simpleicons.org/html5" },
-    { name: "CSS", logo: "https://cdn.simpleicons.org/css" },
   ];
   
   const frameworkSkills: Skill[] = [
@@ -28,14 +24,10 @@ export default function Skills() {
   
   const toolSkills: Skill[] = [
     { name: "Git", logo: "https://cdn.simpleicons.org/git" },
-    { name: "GitHub", logo: "https://cdn.simpleicons.org/github" },
     { name: "Docker", logo: "https://cdn.simpleicons.org/docker" },
     { name: "PostgreSQL", logo: "https://cdn.simpleicons.org/postgresql" },
     { name: "Kafka", logo: "https://cdn.simpleicons.org/apachekafka" },
     { name: "Redis", logo: "https://cdn.simpleicons.org/redis" },
-    { name: "ClickHouse", logo: "https://cdn.simpleicons.org/clickhouse" },
-    { name: "Firebase", logo: "https://cdn.simpleicons.org/firebase" },
-    { name: "JUnit", logo: "https://cdn.simpleicons.org/junit5" },
     { name: "Maven", logo: "https://cdn.simpleicons.org/apachemaven" },
   ];
 

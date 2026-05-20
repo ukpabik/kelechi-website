@@ -24,6 +24,21 @@ type Experience = {
 const experiencesData: Experience[] = [
   {
     id: "exp1",
+    title: "Software Engineer",
+    company: "Google",
+    location: "Mountain View, CA",
+    startDate: "July 2026",
+    endDate: "Present",
+    majorDesc: "Payments - Tax FE Team",
+    minorDescs: [
+      "Developing large-scale tax compliance infrastructure for all major Google products.",
+    ],
+    skills: ["Java", "Protobuf", "gRPC"],
+    link: "https://google.com",
+    logo: "/google_logo.png",
+  },
+  {
+    id: "exp2",
     title: "Software Engineer Intern",
     company: "Cisco",
     location: "Raleigh, NC",
@@ -39,7 +54,7 @@ const experiencesData: Experience[] = [
     logo: "/cisco_logo.png",
   },
   {
-    id: "exp2",
+    id: "exp3",
     title: "Software Engineer Intern",
     company: "GitHub",
     location: "San Francisco, CA (Remote)",
@@ -55,23 +70,6 @@ const experiencesData: Experience[] = [
     skills: ["Go", "Docker", "GraphQL", "REST APIs", "GitHub Actions"],
     link: "https://github.com/about",
     logo: "/github-logo.png",
-  },
-  {
-    id: "exp3",
-    title: "Software Engineer",
-    company: "App Team Carolina",
-    location: "Chapel Hill, NC",
-    startDate: "Sep 2024",
-    endDate: "Present",
-    majorDesc: "Centible is a student-led iOS startup that helps users track daily spending and build mindful financial habits.",
-    minorDescs: [
-      "Led development of 5+ new features, contributing to 500+ active users.",
-      "Refactored legacy Firebase backend, minimizing errors by over 90%.",
-      "Managed a team of 3 backend developers within a 20-person Agile org.",
-    ],
-    skills: ["Swift", "JavaScript", "Node.js", "Google Firebase"],
-    link: "https://appteamcarolina.com/",
-    logo: "/appteam.svg",
   },
 ]
 
