@@ -17,6 +17,15 @@ type ProjectType = {
 const projects = [
   {
     id: 1,
+    title: "KDB",
+    description:
+      "KDB is a fast key-value storage library built upon the LSM tree architecture.",
+    techStack: ["Java", "Guava", "Maven", ],
+    image: "/kdb_img.png",
+    link: "https://github.com/ukpabik/kdb",
+  },
+  {
+    id: 2,
     title: "ezpzlister",
     description:
       "ezpzlister is a full-stack application designed to automate the most tedious parts of the eBay listing process and completely eliminate fees.",
@@ -25,7 +34,7 @@ const projects = [
     link: "https://ezpzlister.com",
   },
   {
-    id: 2,
+    id: 3,
     title: "MidDiff.gg",
     description:
       "A League of Legends platform that uses machine learning to analyze player behavior, cluster gameplay styles, and deliver personalized feedback.",
@@ -35,7 +44,7 @@ const projects = [
     link: "https://mid-diff.vercel.app/"
   },
   {
-    id: 3,
+    id: 4,
     title: "CSYou",
     description:
       "CSYou is a self-hosted analytics platform for Counter-Strike 2 that captures live game telemetry via CS2's Game State Integration (GSI) to provide real-time insights into your gameplay.",
@@ -44,16 +53,16 @@ const projects = [
     github: "https://github.com/ukpabik/CSYou",
   },
   {
-    id: 4,
-    title: "SyllaByte",
+    id: 5,
+    title: "TermBattle",
     description:
-      "Chrome extension and dashboard that extracts academic deadlines from PDF syllabi using a 92% accurate Python machine learning NER model, enabling one-click import to Google Calendar.",
-    techStack: ["Python", "spaCy", "Flask", "TypeScript", "React", "PostgreSQL"],
-    image: "/syllabyte.png",
-    github: "https://github.com/ukpabik/Syllabyte",
+      "A turn-based multiplayer terminal game in Java supporting up to 1,000 concurrent users with Dockerized deployment and multithreaded TCP architecture.",
+    techStack: ["Java", "PostgreSQL", "Docker", "TCP/IP"],
+    image: "/termbattle.png",
+    github: "https://github.com/ukpabik/term-battle",
   },
   {
-    id: 5,
+    id: 6,
     title: "Bolt",
     description:
       "A React-based web app that transcribes videos and generates clickable, timestamped notes using OpenAI Whisper and GPT-4.",
@@ -61,15 +70,6 @@ const projects = [
     image: "/bolt.png",
     link: "https://devpost.com/software/bolt-yaveuc",
   },
-  {
-    id: 6,
-    title: "TermBattle",
-    description:
-      "A turn-based multiplayer terminal game in Java supporting up to 1,000 concurrent users with Dockerized deployment and multithreaded TCP architecture.",
-    techStack: ["Java", "PostgreSQL", "Docker", "TCP/IP"],
-    image: "/termbattle.png",
-    github: "https://github.com/ukpabik/term-battle",
-  }
 ];
 export default function Projects() {
   return (
@@ -89,7 +89,7 @@ function ProjectCard({ project }: {project: ProjectType}) {
     <Card className="overflow-hidden h-[400px] group relative">
       <div className="absolute inset-0 w-full h-full z-5">
         <img src={project.image || "/placeholder.svg"} alt={project.title} className="object-cover h-full w-full" />
-        <div className="absolute inset-0 bg-black/70 group-hover:bg-black/50 transition-colors duration-300"></div>
+        <div className="absolute inset-0 bg-black/75 group-hover:bg-black/50 transition-colors duration-300"></div>
       </div>
 
       <div className="absolute top-4 right-4 z-10 flex gap-2">
