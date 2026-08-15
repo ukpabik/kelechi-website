@@ -28,12 +28,14 @@ export default function About() {
               </p>
               <ul className="grid grid-cols-2 gap-2 text-sm font-mono">
                 <li>▹ Java</li>
+                <li>▹ TypeScript</li>
+                <li>▹ gRPC</li>
                 <li>▹ Protobuf</li>
               </ul>
             </div>
             <p className="text-lg leading-relaxed">
             Outside of work, I love collecting fragrances, playing video games, watching movies, or exercising. 
-              My favorite show is <a href="https://www.netflix.com/title/80992228" className="text-red-500 hover:underline" target="_blank" rel="noopener noreferrer">Kengan Ashura</a>, and my favorite game of all time is <a href="https://www.pokemon.com/us/pokemon-video-games/pokemon-black-version-and-pokemon-white-version/" className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">Pokemon Black</a>.
+              My favorite show is <a href="https://www.imdb.com/title/tt1796960/" className="text-red-500 hover:underline" target="_blank" rel="noopener noreferrer">Homeland</a>, and my favorite game of all time is <a href="https://www.pokemon.com/us/pokemon-video-games/pokemon-black-version-and-pokemon-white-version/" className="text-blue-500 hover:underline" target="_blank" rel="noopener noreferrer">Pokemon Black</a>.
             
             </p>
             
