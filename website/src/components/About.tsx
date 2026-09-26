@@ -1,4 +1,4 @@
-import me from "../assets/me.jpg"
+import me from "../assets/itsme.png"
 export default function About() {
   return (
     <section id="about" className="scroll-mt-24">
